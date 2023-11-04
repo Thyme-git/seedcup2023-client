@@ -60,7 +60,7 @@
 
 - actionType
 
-```json
+```cpp
 enum ActionType {
   SILENT = 0, // 静止不动
   MOVE_LEFT = 1,
