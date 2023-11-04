@@ -94,7 +94,7 @@ enum ActionType {
 - ActionReq的packet样例
 
 ```json  
-{"type": 2, "data": {"playerID": 0, "actionType": 5}
+{"type": 2, "data": {"playerID": 0, "actionType": 5}}
 ```
 
 

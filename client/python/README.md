@@ -196,23 +196,3 @@ action = ActionReq(<your_player_id>, ActionType.MOVE_LEFT)
 actionPacket = PacketReq(PacketType.ActionReq, action)
 client.send(actionPacket)
 ```
-
-#### Tips
-
-> 这部分会填写一些本次开发上实用的技巧 ~~，并根据我的心情不定期更新~~
-
-##### 编辑器使用技巧
-
-* vscode
-  * 安装``python``扩展包后，按住``Ctrl``并将用鼠标点击某个变量或类型，则可以转到他的定义上，这对于阅读代码来说十分方便。
-  * 接上点，``Ctrl Alt -``（减号）可以跳回上一次光标所在的位置，对于查看变量类型后跳回原代码段十分方便。
-
-* vim/neovim
-  * ~~都用vim了应该不用我教了~~
-
-
-##### AI辅助代码工具
-
-* github-copliot
-  * 使用hust邮箱申请学生优惠即可白嫖，谁用谁说好
-  * vscode、vim都可以配置，vs没试过。
