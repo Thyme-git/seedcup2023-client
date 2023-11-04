@@ -23,6 +23,7 @@
 本次组委会提供``Cpp,Python,Go``三种语言的sdk方便开发。本仓库仅包含```Python```语言编写的客户端代码，如果需要使用``Cpp``或者``Go``语言进行开发，请参考下面的链接。
 
 ``Cpp``客户端代码：https://gitee.com/chenxuan520/seedcup-cppsdk
+
 ``Go``客户端代码：https://github.com/chenxuan520/seedcup-gosdk
 
 
