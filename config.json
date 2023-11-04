@@ -1,7 +1,7 @@
 {
   "player_name": "seed-soldier",
 
-  "game_max_round": 1000,
+  "game_max_round": 1200,
   "game_print_map": false,
   "game_print_map_ascii": false,
   "map_size": 15,

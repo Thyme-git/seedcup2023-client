@@ -6,8 +6,7 @@ from config import config
 
 class Emoji(Enum):
     """Kawaii emojis!"""
-    # Bricksaaaa
-    Mosaic = "❓"
+    # Bricks
     HoneyBrick = "🍯"
     BottleBrick = "🏺"
     SunFlowerBrick = "🌻"
@@ -26,7 +25,7 @@ class Emoji(Enum):
     Character4 = "🧛"
     CharacterInvencible = "👼"
     CharacterShield = "👒"
-    
+
     # Items
     Hp = "💖"
     Speed = "🛼"
