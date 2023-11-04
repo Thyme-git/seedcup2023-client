@@ -1,5 +1,24 @@
 # 开发指南
 
+
+## 运行游戏的方法
+
+首先运行服务端，接着运行两个客户端（bot也算是一个客户端）。对于服务端和客户端的功能描述，请参考下文“Client-Server运行流程”
+
+```shell
+# launch server
+cd bin
+./server # if run into permission denied problem, run `chmod +x server` first
+
+# launch bot
+cd bin
+./silly-bot # if run into permission denied problem, run `chmod +x server` first
+
+# launch client, take python client as example
+cd client/python
+python main.py
+```
+
 ## Client开发指南
 
 ### Client-Server运行流程
@@ -15,8 +34,9 @@
 
 #### 选手需要做些什么
 
-在本次比赛中，选手需要编写代码，根据client接收到的游戏状态信息进行决策，并将要让角色做出的动作（例如向上走一步或放置炸弹）回传给server
+在本次比赛中，选手需要编写代码，根据client接收到的游戏状态信息进行决策，并将要让角色做出的动作（例如向上走一步或放置炸弹）回传给server。
 
+<font color=red>注意，选手并不需要编写server端，因为游戏的机制是固定的。选手只需要修改client端，接收游戏的状态信息并让做出相应的动作即可。</font>
 
 ## 客户端代码
 
