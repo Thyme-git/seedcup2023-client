@@ -3,7 +3,7 @@
 
   "game_max_round": 1200,
   "game_print_map": true,
-  "game_print_map_ascii": true,
+  "game_print_map_ascii": false,
   "map_size": 15,
   "player_num": 2,
   "player_hp": 1,
@@ -26,8 +26,8 @@
   "result_path": "result.json",
   "black_list":[],
 
-  "timer_initial_value": 200,
-  "round_interval_value": 200,
+  "timer_initial_value": 500,
+  "round_interval_value": 500,
   "server_max_connection_num": 10,
   "epoll_max_events_num": 100,
   "epoll_timeout": 10,
