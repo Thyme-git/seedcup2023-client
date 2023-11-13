@@ -93,11 +93,13 @@ enum ActionType {
 };
 ```
 
-- ActionReq的packet样例
+- <font color=red>ActionReq的packet样例</font>
 
 ```json  
-{"type": 2, "data": {"playerID": 0, "actionType": 5}}
+{"type": 2, "data": [{"playerID": 0, "actionType": 0}, {"playerID": 0, "actionType": 1}]}
 ```
+
+<font color=red>这里的data字段是一个列表，每一个元素代表一个动作，一个回合内可以在行动速度的限制下执行多个动作</font>
 
 
 ### Response协议
