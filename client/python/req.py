@@ -1,5 +1,5 @@
 from base import *
-from typing import Union
+from typing import Union, List
 
 
 class ActionType(JsonIntEnum):
@@ -33,7 +33,7 @@ class PacketReq(JsonBase):
     """The basic packet of communication with the server."""
 
     def __init__(
-        self, type: PacketType, data: Union[InitReq, ActionReq]
+        self, type: PacketType, data: Union[InitReq, List[ActionReq]]
     ) -> None:
         super().__init__()
         self.type = type

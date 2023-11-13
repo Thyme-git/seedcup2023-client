@@ -193,6 +193,14 @@ class ActionType(JsonIntEnum):
 
 ```python
 action = ActionReq(<your_player_id>, ActionType.MOVE_LEFT)
-actionPacket = PacketReq(PacketType.ActionReq, action)
+actionPacket = PacketReq(PacketType.ActionReq, [action])
 client.send(actionPacket)
 ```
+
+<font color=red>在一个回合内，可以做出多个行动，行动的最大个数为玩家的行动速度（初赛中为行动速度为2且不变）。若要做出多个行动，不需要发送多个```PacketReq```，只需要将创建```PacketReq```的代码改为如下代码即可：
+
+```python
+actionPacket = PacketReq(PacketType.ActionReq, [action0, action1])
+```
+
+其中，第二个变量变为了一个列表，列表内是多个```ActionReq```。</font>
