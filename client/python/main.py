@@ -181,7 +181,7 @@ def termPlayAPI():
             if gContext["gameOverFlag"]:
                 break
             
-            actionPacket = PacketReq(PacketType.ActionReq, [action])
+            actionPacket = PacketReq(PacketType.ActionReq, action)
             client.send(actionPacket)
 
 
