@@ -16,7 +16,7 @@
   "shield_time": 30,
   "invincible_time": 15,
   "mark_kill": 10000,
-  "mark_dead": 12000,
+  "mark_dead": 0,
   "mark_pick_potion": 100,
   "mark_bomb_mud": 10,
   "potion_probability": 50,

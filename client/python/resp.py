@@ -9,6 +9,8 @@ class ItemType(JsonIntEnum):
     HP = 3
     INVINCIBLE = 4
     SHIELD = 5
+    SPEED = 6
+    GLOVES = 7
 
 
 class ObjType(JsonIntEnum):
@@ -18,10 +20,19 @@ class ObjType(JsonIntEnum):
     Block = 3
     Item = 4
 
+class BombStatus(JsonIntEnum):
+    BOMB_SILENT = 0
+    BOMB_MOVE_LEFT = 1
+    BOMB_MOVE_RIGHT = 2
+    BOMB_MOVE_UP = 3
+    BOMB_MOVE_DOWN = 4
+
 
 class Player(JsonBase):
     def __init__(
         self,
+        player_name: str = "",
+        has_gloves: bool = False,
         player_id: int = 0,
         alive: bool = True,
         hp: int = 0,
@@ -34,6 +45,8 @@ class Player(JsonBase):
         speed: int = 0,  
     ) -> None:
         super().__init__()
+        self.player_name = player_name
+        self.has_gloves = has_gloves
         self.player_id = player_id
         self.alive = alive
         self.hp = hp
@@ -51,12 +64,14 @@ class Bomb(JsonBase):
         self,
         bomb_id: int = 0,
         bomb_range: int = 1,
-        player_id: int = 0
+        player_id: int = 0,
+        bomb_status: BombStatus = BombStatus.BOMB_SILENT,
     ) -> None:
         super().__init__()
         self.bomb_id = bomb_id
         self.bomb_range = bomb_range
         self.player_id = player_id
+        self.bomb_status = bomb_status
 
 
 class Block(JsonBase):

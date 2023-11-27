@@ -28,7 +28,8 @@ class Emoji(Enum):
 
     # Items
     Hp = "💖"
-    Speed = "🛼"
+    Speed = "🚄"
+    Gloves = "🧤"
     Bomb = "💣"
     BombNum = "💊"
     Shield = "🔰"
@@ -63,7 +64,9 @@ itemType2Emoji = {
     ItemType.BOMB_RANGE: Emoji.BombRange.emoji,
     ItemType.BOMB_NUM: Emoji.BombNum.emoji,
     ItemType.INVINCIBLE: Emoji.Invencible.emoji,
-    ItemType.SHIELD: Emoji.Shield.emoji
+    ItemType.SHIELD: Emoji.Shield.emoji,
+    ItemType.SPEED: Emoji.Speed.emoji,
+    ItemType.GLOVES: Emoji.Gloves.emoji,
 }
 
 class Block(object):
@@ -129,6 +132,8 @@ class UI(object):
                 f"{Emoji.BombRange.emoji}: {self._player.bomb_range}, "\
                 f"{Emoji.BombNum.emoji}: {self._player.bomb_max_num}, "\
                 f"{Emoji.Bomb.emoji}: {self._player.bomb_now_num}, "\
+                f"{Emoji.Speed.emoji}: {self._player.speed}, "\
+                f"{Emoji.Gloves.emoji}: {self._player.has_gloves}, "\
                 f"Score: {self._player.score}"
             )
 
